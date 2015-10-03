@@ -21,6 +21,6 @@ type ReportRequest: void{
 }
 
 interface BankInterface {
-	RequestResponse: login(LoginRequest)(OpMessage), wd(WdRequest)(OpMessage), deposit(DepositRequest)(OpMessage), report(ReportRequest)(OpMessage)
+	RequestResponse: login(LoginRequest)(OpMessage), wd(WdRequest)(OpMessage), deposit(DepositRequest)(OpMessage), report(ReportRequest)(double)
 	OneWay: logout(OpMessage)
 }

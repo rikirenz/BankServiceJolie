@@ -50,9 +50,9 @@ main
 			reportReq.sid = opMessage.sid;
 			reportReq.message = "";
 			// send request
-			deposit@BankService( reportReq )(response);
+			report@BankService( reportReq )(response);
 			// print response
-			println@Console( "Server Responded: " + response.message + "\t sid: "+response.sid )()
+			println@Console( "Server Responded: Your balance is " + response )()
 		}
 	}
 }
